@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #f1f1f1;
+  --secondary-color: #175cf1;
+  --tertiary-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 3rem;
+  background: var(--primary-color);
+  height: 100vh;
+}
+
+.container h1 {
+  color: var(--tertiary-color);
+}
+
+.timer {
+  display: flex;
+  font-size: 55px;
+  font-weight: bold;
+  color: var(--tertiary-color);
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: var(--secondary-color);
+  min-width: 90px;
+}
+
+.separator {
+  padding: 0 10px;
+  color: var(--tertiary-color);
+}
+
+#miliseconds {
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+.button {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 1px solid var(--tertiary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+#startBtn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: transparent;
+}
+
+#pauseBtn,
+#resumeBtn {
+  display: none;
+}
